@@ -1,0 +1,17 @@
+# Specify the version of the docker-compose file format
+version: '3.4'
+
+# Define the services that make up the app
+services:
+  # The web service is the app itself
+  web:
+    # Build the web service using the Dockerfile in the current directory
+    build: .
+    # Run the web service on port 80 and map it to port 8000 on the host
+    ports:
+      - "8080:80"
+    # Restart the web service if it fails
+    restart: always
+    environment: 
+    - ASPNETCORE_ENVIRONMENT=Production
+    - ASPNETCORE_KESTREL__ENDPOINTS__HTTP__URL=http://+:80

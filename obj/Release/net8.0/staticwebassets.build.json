@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jSZssMViTKDLBlEq9Uj1NJ5f6cOOhRHwaI0pNuct4A0=",
+  "Source": "sampleApp",
+  "BasePath": "_content/sampleApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
